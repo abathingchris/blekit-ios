@@ -30,7 +30,7 @@
 
 #define BLERangingSecondsTimeFrame 2
 
-// timeout value since last read. After that amount of time batch is cheared out
+// timeout value since last read. After that amount of time batch is cleared out
 #define BLERangingSecondsTimeout 120
 
 static NSDate *lastRanging;
