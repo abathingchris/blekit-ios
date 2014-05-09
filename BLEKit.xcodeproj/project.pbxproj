@@ -35,7 +35,47 @@
 		75C57490183668E100FBAF7F /* BLEYelpAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C5748F183668E100FBAF7F /* BLEYelpAction.m */; };
 		75C5749B183676E600FBAF7F /* YLClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C57495183676E600FBAF7F /* YLClient.m */; };
 		75D49B2D1833C3EE00FA7D5F /* BLEAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D49B2C1833C3EE00FA7D5F /* BLEAlertAction.m */; };
+		BD040689190AAECB00552802 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75725EF0180C3538000D24E8 /* Foundation.framework */; };
+		BD040696190AAECB00552802 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75725EFE180C3538000D24E8 /* XCTest.framework */; };
+		BD040697190AAECB00552802 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75725EF0180C3538000D24E8 /* Foundation.framework */; };
+		BD040698190AAECB00552802 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750CE5CD1819460A000CBC40 /* UIKit.framework */; };
+		BD0406A1190AAECB00552802 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BD04069F190AAECB00552802 /* InfoPlist.strings */; };
+		BD0406A3190AAECB00552802 /* blekitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0406A2190AAECB00552802 /* blekitTests.m */; };
+		BD0406AA190AAF1F00552802 /* BLEKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 75725EF7180C3538000D24E8 /* BLEKit.m */; };
+		BD0406AB190AAF2300552802 /* BLEKitDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 750CE5CB18193C5A000CBC40 /* BLEKitDelegate.m */; };
+		BD0406AC190AAF2900552802 /* BLEAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D49B2C1833C3EE00FA7D5F /* BLEAlertAction.m */; };
+		BD0406AD190AAF3000552802 /* YLClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C57495183676E600FBAF7F /* YLClient.m */; };
+		BD0406AE190AAF8100552802 /* UNCodingUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 75725F1E180C3947000D24E8 /* UNCodingUtil.m */; };
+		BD0406AF190AAF8100552802 /* UNMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 75725F1B180C38F5000D24E8 /* UNMutableURLRequest.m */; };
+		BD0406B0190AAF8100552802 /* UNURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 75725F18180C3701000D24E8 /* UNURLConnection.m */; };
+		BD0406B1190AAF8100552802 /* CLBeacon+BLEKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 758ECD3F183E3D3200A5C383 /* CLBeacon+BLEKit.m */; };
+		BD0406B2190AAF8100552802 /* SAMCache+BLEKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 757D6343186350B80043FD71 /* SAMCache+BLEKit.m */; };
+		BD0406B3190AAF8100552802 /* BLEBeaconsRangeBatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 75926A2E187C2702004309A5 /* BLEBeaconsRangeBatch.m */; };
+		BD0406B4190AAF8100552802 /* BLEEventScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BF1D5E187DF7FD00B29B8A /* BLEEventScheduler.m */; };
+		BD0406B7190AAF8100552802 /* BLEContentAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 751E1FCC1834D373003BA246 /* BLEContentAction.m */; };
+		BD0406B8190AAF8100552802 /* BLEContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751E1FCF1834D7B8003BA246 /* BLEContentViewController.m */; };
+		BD0406BA190AAF8100552802 /* BLENotificationAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 7521ED7F1859FB5900F9C9E1 /* BLENotificationAction.m */; };
+		BD0406BC190AAF8100552802 /* BLEZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 751C81BE180D4D3400C636E1 /* BLEZone.m */; };
+		BD0406BD190AAF8100552802 /* BLEBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = 75725F21180C3AFC000D24E8 /* BLEBeacon.m */; };
+		BD0406BE190AAF8100552802 /* BLETrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = 75108A0C180D90F200ECF848 /* BLETrigger.m */; };
+		BD0406BF190AAF8100552802 /* BLEAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 75108A0F180D930900ECF848 /* BLEAction.m */; };
+		BD0406C0190AAF8100552802 /* BLECondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 75108A12180D931B00ECF848 /* BLECondition.m */; };
+		BD0406C1190AAF8100552802 /* BLELocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 75725F24180C3BA0000D24E8 /* BLELocation.m */; };
+		BD0406C5190AB03000552802 /* BLEKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75725EF5180C3538000D24E8 /* BLEKit.h */; };
+		BD0406C6190AB05200552802 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750CE5CD1819460A000CBC40 /* UIKit.framework */; };
+		BD0406C7190AB05800552802 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75725F26180C3C32000D24E8 /* CoreLocation.framework */; };
+		BD0406C9190AB06100552802 /* libPods-BLEKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD0406C8190AB06100552802 /* libPods-BLEKit.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD040699190AAECB00552802 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75725EE5180C3538000D24E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD040687190AAECB00552802;
+			remoteInfo = blekit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		75725EEB180C3538000D24E8 /* CopyFiles */ = {
@@ -45,6 +85,16 @@
 			dstSubfolderSpec = 16;
 			files = (
 				75725EF6180C3538000D24E8 /* BLEKit.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD040686190AAECB00552802 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				BD0406C5190AB03000552802 /* BLEKit.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,8 +131,8 @@
 		75725EED180C3538000D24E8 /* libBLEKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBLEKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		75725EF0180C3538000D24E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		75725EF4180C3538000D24E8 /* BLEKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BLEKit-Prefix.pch"; sourceTree = "<group>"; };
-		75725EF5180C3538000D24E8 /* BLEKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BLEKit.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		75725EF7180C3538000D24E8 /* BLEKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BLEKit.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		75725EF5180C3538000D24E8 /* BLEKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BLEKit.h; sourceTree = "<group>"; };
+		75725EF7180C3538000D24E8 /* BLEKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BLEKit.m; sourceTree = "<group>"; };
 		75725EFE180C3538000D24E8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		75725F17180C3701000D24E8 /* UNURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = UNURLConnection.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		75725F18180C3701000D24E8 /* UNURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = UNURLConnection.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
@@ -110,6 +160,13 @@
 		75D49B2B1833C3EE00FA7D5F /* BLEAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = BLEAlertAction.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		75D49B2C1833C3EE00FA7D5F /* BLEAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BLEAlertAction.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		AAC7D89C54194444AE3E9DBB /* libPods-BLEKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BLEKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD040688190AAECB00552802 /* libblekit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libblekit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD04068C190AAECB00552802 /* blekit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "blekit-Prefix.pch"; sourceTree = "<group>"; };
+		BD040695190AAECB00552802 /* blekitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = blekitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD04069E190AAECB00552802 /* blekitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "blekitTests-Info.plist"; sourceTree = "<group>"; };
+		BD0406A0190AAECB00552802 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BD0406A2190AAECB00552802 /* blekitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = blekitTests.m; sourceTree = "<group>"; };
+		BD0406C8190AB06100552802 /* libPods-BLEKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-BLEKit.a"; path = "Pods/build/Debug-iphoneos/libPods-BLEKit.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +178,27 @@
 				75725F27180C3C32000D24E8 /* CoreLocation.framework in Frameworks */,
 				75725EF1180C3538000D24E8 /* Foundation.framework in Frameworks */,
 				3496A0822883461BB2F474C2 /* libPods-BLEKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD040685190AAECB00552802 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD0406C7190AB05800552802 /* CoreLocation.framework in Frameworks */,
+				BD0406C6190AB05200552802 /* UIKit.framework in Frameworks */,
+				BD040689190AAECB00552802 /* Foundation.framework in Frameworks */,
+				BD0406C9190AB06100552802 /* libPods-BLEKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD040692190AAECB00552802 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD040696190AAECB00552802 /* XCTest.framework in Frameworks */,
+				BD040698190AAECB00552802 /* UIKit.framework in Frameworks */,
+				BD040697190AAECB00552802 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +266,8 @@
 			isa = PBXGroup;
 			children = (
 				75725EF2180C3538000D24E8 /* BLEKit */,
+				BD04068A190AAECB00552802 /* blekit */,
+				BD04069C190AAECB00552802 /* blekitTests */,
 				75725EEF180C3538000D24E8 /* Frameworks */,
 				75725EEE180C3538000D24E8 /* Products */,
 				6BC669877EF242D2B1BDCCBF /* Pods-BLEKit.xcconfig */,
@@ -198,6 +278,8 @@
 			isa = PBXGroup;
 			children = (
 				75725EED180C3538000D24E8 /* libBLEKit.a */,
+				BD040688190AAECB00552802 /* libblekit.a */,
+				BD040695190AAECB00552802 /* blekitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -205,6 +287,7 @@
 		75725EEF180C3538000D24E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BD0406C8190AB06100552802 /* libPods-BLEKit.a */,
 				753529341859DEA3002C88DB /* MobileCoreServices.framework */,
 				753529321859DE90002C88DB /* SystemConfiguration.framework */,
 				750CE5CD1819460A000CBC40 /* UIKit.framework */,
@@ -272,6 +355,40 @@
 			path = "yelp-ios-api-v2";
 			sourceTree = "<group>";
 		};
+		BD04068A190AAECB00552802 /* blekit */ = {
+			isa = PBXGroup;
+			children = (
+				BD04068B190AAECB00552802 /* Supporting Files */,
+			);
+			path = blekit;
+			sourceTree = "<group>";
+		};
+		BD04068B190AAECB00552802 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD04068C190AAECB00552802 /* blekit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BD04069C190AAECB00552802 /* blekitTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD0406A2190AAECB00552802 /* blekitTests.m */,
+				BD04069D190AAECB00552802 /* Supporting Files */,
+			);
+			path = blekitTests;
+			sourceTree = "<group>";
+		};
+		BD04069D190AAECB00552802 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD04069E190AAECB00552802 /* blekitTests-Info.plist */,
+				BD04069F190AAECB00552802 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -293,6 +410,43 @@
 			productName = BLEKit;
 			productReference = 75725EED180C3538000D24E8 /* libBLEKit.a */;
 			productType = "com.apple.product-type.library.static";
+		};
+		BD040687190AAECB00552802 /* blekit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD0406A8190AAECB00552802 /* Build configuration list for PBXNativeTarget "blekit" */;
+			buildPhases = (
+				BD0406C2190AAFBA00552802 /* Check Manifests.lock */,
+				BD040684190AAECB00552802 /* Sources */,
+				BD040685190AAECB00552802 /* Frameworks */,
+				BD040686190AAECB00552802 /* CopyFiles */,
+				BD0406CA190AB08300552802 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = blekit;
+			productName = blekit;
+			productReference = BD040688190AAECB00552802 /* libblekit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BD040694190AAECB00552802 /* blekitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD0406A9190AAECB00552802 /* Build configuration list for PBXNativeTarget "blekitTests" */;
+			buildPhases = (
+				BD040691190AAECB00552802 /* Sources */,
+				BD040692190AAECB00552802 /* Frameworks */,
+				BD040693190AAECB00552802 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD04069A190AAECB00552802 /* PBXTargetDependency */,
+			);
+			name = blekitTests;
+			productName = blekitTests;
+			productReference = BD040695190AAECB00552802 /* blekitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -317,9 +471,22 @@
 			projectRoot = "";
 			targets = (
 				75725EEC180C3538000D24E8 /* BLEKit */,
+				BD040687190AAECB00552802 /* blekit */,
+				BD040694190AAECB00552802 /* blekitTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD040693190AAECB00552802 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD0406A1190AAECB00552802 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		8D1D355E43364EAFAC51E68B /* Check Pods Manifest.lock */ = {
@@ -335,6 +502,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BD0406C2190AAFBA00552802 /* Check Manifests.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Manifests.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\ncat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\nexit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BD0406CA190AB08300552802 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-BLEKit-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C6C5ABDB106B43BBBCAFEA85 /* Copy Pods Resources */ = {
@@ -385,7 +582,61 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BD040684190AAECB00552802 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD0406AE190AAF8100552802 /* UNCodingUtil.m in Sources */,
+				BD0406AF190AAF8100552802 /* UNMutableURLRequest.m in Sources */,
+				BD0406B0190AAF8100552802 /* UNURLConnection.m in Sources */,
+				BD0406B1190AAF8100552802 /* CLBeacon+BLEKit.m in Sources */,
+				BD0406B2190AAF8100552802 /* SAMCache+BLEKit.m in Sources */,
+				BD0406B3190AAF8100552802 /* BLEBeaconsRangeBatch.m in Sources */,
+				BD0406B4190AAF8100552802 /* BLEEventScheduler.m in Sources */,
+				BD0406B7190AAF8100552802 /* BLEContentAction.m in Sources */,
+				BD0406B8190AAF8100552802 /* BLEContentViewController.m in Sources */,
+				BD0406BA190AAF8100552802 /* BLENotificationAction.m in Sources */,
+				BD0406BC190AAF8100552802 /* BLEZone.m in Sources */,
+				BD0406BD190AAF8100552802 /* BLEBeacon.m in Sources */,
+				BD0406BE190AAF8100552802 /* BLETrigger.m in Sources */,
+				BD0406BF190AAF8100552802 /* BLEAction.m in Sources */,
+				BD0406C0190AAF8100552802 /* BLECondition.m in Sources */,
+				BD0406C1190AAF8100552802 /* BLELocation.m in Sources */,
+				BD0406AA190AAF1F00552802 /* BLEKit.m in Sources */,
+				BD0406AD190AAF3000552802 /* YLClient.m in Sources */,
+				BD0406AB190AAF2300552802 /* BLEKitDelegate.m in Sources */,
+				BD0406AC190AAF2900552802 /* BLEAlertAction.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD040691190AAECB00552802 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD0406A3190AAECB00552802 /* blekitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD04069A190AAECB00552802 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD040687190AAECB00552802 /* blekit */;
+			targetProxy = BD040699190AAECB00552802 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BD04069F190AAECB00552802 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD0406A0190AAECB00552802 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		75725F0E180C3538000D24E8 /* Debug */ = {
@@ -421,7 +672,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -470,6 +721,7 @@
 				GCC_PREFIX_HEADER = "BLEKit/BLEKit-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -491,6 +743,101 @@
 			};
 			name = Release;
 		};
+		BD0406A4190AAECB00552802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/blekit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "blekit/blekit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"${PODS_ROOT}/Headers\"/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		BD0406A5190AAECB00552802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/blekit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "blekit/blekit-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"${PODS_ROOT}/Headers\"/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		BD0406A6190AAECB00552802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "blekit/blekit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "blekitTests/blekitTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BD0406A7190AAECB00552802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "blekit/blekit-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "blekitTests/blekitTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -508,6 +855,24 @@
 			buildConfigurations = (
 				75725F11180C3538000D24E8 /* Debug */,
 				75725F12180C3538000D24E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD0406A8190AAECB00552802 /* Build configuration list for PBXNativeTarget "blekit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD0406A4190AAECB00552802 /* Debug */,
+				BD0406A5190AAECB00552802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD0406A9190AAECB00552802 /* Build configuration list for PBXNativeTarget "blekitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD0406A6190AAECB00552802 /* Debug */,
+				BD0406A7190AAECB00552802 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
