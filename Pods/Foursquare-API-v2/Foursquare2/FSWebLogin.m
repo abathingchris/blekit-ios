@@ -9,23 +9,21 @@
 #import "FSWebLogin.h"
 #import "Foursquare2.h"
 
-@interface Foursquare2 (InterfaceTick)
-+ (void)setAccessToken:(NSString *)token;
-@end
-
 @interface FSWebLogin () <UIWebViewDelegate>
 
 @property (nonatomic, strong) NSString *url;
 @property (nonatomic, weak) IBOutlet UIWebView *webView;
-
+@property (nonatomic, weak) id<FSWebLoginDelegate> delegate;
 @end
 
 @implementation FSWebLogin
 
-- (id) initWithUrl:(NSString *)url {
+- (id) initWithUrl:(NSString *)url andDelegate:(id<FSWebLoginDelegate>)delegate{
 	self = [super init];
 	if (self != nil) {
 		self.url = url;
+        self.delegate = delegate;
+        [self removeCookiesFromPreviousLogin];
 	}
 	return self;
 }
@@ -34,61 +32,45 @@
     [super viewDidLoad];
     self.title = NSLocalizedString(@"Login", nil);
     self.navigationItem.leftBarButtonItem =
-    [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Cancel", nil)
-                                     style:UIBarButtonSystemItemCancel
-                                    target:self
-                                    action:@selector(cancel)];
+    [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
+                                                  target:self
+                                                  action:@selector(cancelButtonTapped)];
 	
 	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:self.url]];
 	[self.webView loadRequest:request];
 }
 
-
-
-
-- (void)cancel {
-	[self dismissViewControllerAnimated:YES completion:^{
-        [self.delegate performSelector:self.selector withObject:nil afterDelay:0];
-    }];
+- (void)cancelButtonTapped {
+    NSError *error = [NSError errorWithDomain:kFoursquare2ErrorDomain code:Foursquare2ErrorCancelled userInfo:@{ NSLocalizedFailureReasonErrorKey : @"Web login cancelled"}];
+    [self.delegate webLogin:self didFinishWithError:error];
 }
-
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
 
 - (BOOL)webView:(UIWebView *)webView
 shouldStartLoadWithRequest:(NSURLRequest *)request
  navigationType:(UIWebViewNavigationType)navigationType {
-	NSString *url =[[request URL] absoluteString];
-	if ([url rangeOfString:@"access_token="].length != 0) {
-		NSHTTPCookie *cookie;
-		NSHTTPCookieStorage *storage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
-		for (cookie in [storage cookies]) {
-
-			if ([[cookie domain]isEqualToString:@"foursquare.com"]) {
-				[storage deleteCookie:cookie];
-			}
-		}
-		
-		NSArray *arr = [url componentsSeparatedByString:@"="];
-        [Foursquare2 setAccessToken:arr[1]];
-		[self dismissViewControllerAnimated:YES completion:^{
-            [self.delegate performSelector:self.selector withObject:nil];
-        }];
-	}else if ([url rangeOfString:@"error="].length != 0) {
-		NSArray *arr = [url componentsSeparatedByString:@"="];
-		[self.delegate performSelector:self.selector withObject:arr[1]];
-	} 
-
+    NSString *urlString = [[request URL] absoluteString];
+    if ([urlString rangeOfString:@"error"].length == 0 &&
+        [urlString rangeOfString:@"access_token"].length == 0) {
+        return YES;
+    }
+    
+    NSError *error;
+	if ([urlString rangeOfString:@"error="].length != 0) {
+		NSArray *array = [urlString componentsSeparatedByString:@"="];
+        NSDictionary *userInfo = @{NSLocalizedFailureReasonErrorKey:array[1]};
+        error = [NSError errorWithDomain:kFoursquare2ErrorDomain code:Foursquare2ErrorUnknown userInfo:userInfo];
+	}
+    [self.delegate webLogin:self didFinishWithError:error];
 	return YES;
 }
-#pragma clang diagnostic pop
-- (void)webViewDidStartLoad:(UIWebView *)webView {
-}
 
-- (void)webViewDidFinishLoad:(UIWebView *)webView {
-}
-
-- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+- (void)removeCookiesFromPreviousLogin {
+    NSHTTPCookieStorage *storage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
+    for (NSHTTPCookie *cookie in [storage cookies]) {
+        if ([[cookie domain] rangeOfString:@"foursquare.com"].length) {
+            [storage deleteCookie:cookie];
+        }
+    }
 }
 
 @end
