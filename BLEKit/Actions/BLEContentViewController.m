@@ -51,6 +51,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     CGFloat yPos = self.view.frame.origin.y > 64 ?: 64.0;
+    yPos = 104.0f;
     self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(self.view.frame.origin.x, yPos, self.view.frame.size.width, self.view.frame.size.height - yPos)];
     self.webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [self.view addSubview:self.webView];
@@ -61,6 +62,8 @@
     [closeButton setFrame:CGRectMake(0, 60, self.view.frame.size.width, 44)];
     [closeButton setTitle:NSLocalizedString(@"Close",nil) forState:UIControlStateNormal];
     [closeButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    closeButton.titleLabel.font = [UIFont fontWithName:@"Helvetica" size:22];
+    closeButton.backgroundColor = [UIColor colorWithWhite:0.929 alpha:1.000];
     [closeButton addTarget:self action:@selector(closeButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:closeButton];
     
