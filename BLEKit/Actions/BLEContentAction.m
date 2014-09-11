@@ -40,7 +40,13 @@
 {
     if (self = [super initWithUniqueIdentifier:uniqueIdentifier andTrigger:trigger]) {
         if (self.parameters[@"url"]) {
-            self.url = [NSURL URLWithString:self.parameters[@"url"]];
+            NSString *urlString = self.parameters[@"url"];
+            if (![urlString hasPrefix:@"http"]) {
+              urlString = [[NSBundle mainBundle] pathForResource:[urlString stringByDeletingPathExtension] ofType:[urlString pathExtension]];
+              self.url = [NSURL fileURLWithPath:urlString];
+            } else {
+              self.url = [NSURL URLWithString:urlString];
+            }
         }
         self.message = self.parameters[@"message"] ?: self.message;
     }
